@@ -1,11 +1,8 @@
 
-
-def main():
+def calcular(num, numPrimo):
 
     contador = 0
     numPrimo = False
-
-    num=int(input("Ingrese un numero entero: "))
 
     for i in range(1, num + 1):
         if (num % i) == 0:
@@ -20,6 +17,17 @@ def main():
     else:
         print("El numero ingresado no es primo")
 
+    return numPrimo
+
+
+def main():
+
+    contador = 0
+    numPrimo = False
+
+    num=int(input("Ingrese un numero entero: "))
+
+    calcular(num, numPrimo)
 
 if __name__ == '__main__':
     main()
